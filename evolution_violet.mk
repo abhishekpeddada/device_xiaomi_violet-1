@@ -7,13 +7,15 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit ANX Camera
 #$(call inherit-product, vendor/ANXCamera/config.mk)
 
 #Gapps
-WITH_GAPPS := false
+#WITH_GAPPS := false
+
+TARGET_USES_MINI_GAPPS := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -25,7 +27,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_violet
+PRODUCT_NAME := evolution_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
@@ -38,9 +40,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-# Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := abhix202
-XTENDED_BUILD_TYPE := OFFICIAL
 
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 

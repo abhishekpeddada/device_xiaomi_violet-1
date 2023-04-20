@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_violet.mk
+    $(LOCAL_DIR)/evolution_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_violet-userdebug \
-    xtended_violet-user \
-    xtended_violet-eng
+    evolution_violet-userdebug \
+    evolution_violet-user \
+    evolution_violet-eng
